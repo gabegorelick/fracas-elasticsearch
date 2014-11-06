@@ -12,8 +12,8 @@ RUN apt-get update \
   && apt-get install -y openjdk-7-jre-headless curl --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
-ENV ELASTICSEARCH_DOWNLOAD_URL https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.tar.gz
-ENV ELASTICSEARCH_DOWNLOAD_SHA1 a7ea036468473084cd62e846f05a2069a987fb03
+ENV ELASTICSEARCH_DOWNLOAD_URL https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.0.tar.gz
+ENV ELASTICSEARCH_DOWNLOAD_SHA1 728913722bc94dad4cb5e759a362f09dc19ed6fe
 
 # Download and install elasticsearch. We don't use their debs because this is
 # easier and we don't care about the package manager (this is Docker after all).
