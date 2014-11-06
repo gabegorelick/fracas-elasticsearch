@@ -9,7 +9,7 @@ FROM debian:jessie
 MAINTAINER Gabe Gorelick, "https://github.com/gabegorelick"
 
 RUN apt-get update \
-  && apt-get install -y openjdk-7-jre-headless curl --no-install-recommends
+  && apt-get install -y openjdk-7-jre-headless curl --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 ENV ELASTICSEARCH_DOWNLOAD_URL https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.tar.gz
